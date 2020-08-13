@@ -5,7 +5,7 @@
 	<groupId>com.mycompany</groupId>
 	<artifactId>training4-american-was</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>mule-application</packaging>
 
 	<name>training4-american-was</name>
 
