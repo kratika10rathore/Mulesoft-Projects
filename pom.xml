@@ -21,8 +21,8 @@
 		<plugins>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-app-maven-plugin</artifactId>
-				<version>1.7</version>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>3.1.6</version>
 				<extensions>true</extensions>
 			<configuration>
 			<cloudHubDeployment>	
@@ -34,6 +34,9 @@
 				<applicationName>mule-app-kratika1</applicationName>
 				<password>Pizza@1993</password>
 				<muleVersion>4.2.2</muleVersion>
+				<properties>
+                                  <key>value</key>
+                                </properties>
 			</cloudHubDeployment>	
                     <sharedLibraries>
                         <sharedLibrary>
