@@ -30,7 +30,7 @@
 				<environment>Sandbox</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
-				<applicationName>mule</applicationName>
+				<applicationName>mule-app</applicationName>
 				<password>Pizza@1993</password>
 				<muleVersion>4.2.2</muleVersion>
 			</cloudHubDeployment>	
