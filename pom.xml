@@ -11,7 +11,7 @@
 	<distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
-      
+      <id>corp1</id>
       <name>Corporate Repository</name>
       <url>https://anypoint.mulesoft.com</url>
       <layout>default</layout>
@@ -37,18 +37,19 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 			<configuration>
-			        <deploymentType>cloudhub</deploymentType>	
-				<uri>https://anypoint.mulesoft.com</uri>
-				<username>kratika1</username>
-				<environment>Sandbox</environment>
-				<workers>1</workers>
-				<workerType>MICRO</workerType>
-				<applicationName>mule-app-kratika1</applicationName>
-				<password>Pizza@1993</password>
-				<muleVersion>4.2.2</muleVersion>
-				<properties>
-                                  <key>value</key>
-                                </properties>
+			        <deploymentType>cloudhub</deploymentType>
+				 <deploymentType>cloudhub</deploymentType>
+                                 <muleVersion>${mule.version}</muleVersion> 
+                                 <username>${anypoint.username}</username> 
+                                 <password>${anypoint.password}</password> 
+                                 <applicationName>${artifactId}</applicationName>
+                                 <environment>${cloundhub.env}</environment> 
+                                 <businessGroup>${anypoint.businessGroup}</businessGroup>
+                                <region>${cloudhub.region}</region>
+                                <uri>${anypoint.uri}</uri> 
+                                <workerType>${cloudhub.workerType}</workerType>
+                                <workers>${cloudhub.workers}</workers>
+				
 				
                     <sharedLibraries>
                         <sharedLibrary>
