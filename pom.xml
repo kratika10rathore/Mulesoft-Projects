@@ -26,7 +26,9 @@
 		<app.runtime>4.2.2</app.runtime>
 		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
 	</properties>
-
+	<profiles>
+		<profile>
+        <id>cloudhub</id>
 	<build>
 		<plugins>
 			<plugin>
@@ -35,7 +37,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 			<configuration>
-			<cloudHubDeployment>	
+			        <deploymentType>cloudhub</deploymentType>	
 				<uri>https://anypoint.mulesoft.com</uri>
 				<username>kratika1</username>
 				<environment>Sandbox</environment>
@@ -47,7 +49,7 @@
 				<properties>
                                   <key>value</key>
                                 </properties>
-			</cloudHubDeployment>	
+				
                     <sharedLibraries>
                         <sharedLibrary>
                             <groupId>mysql</groupId>
@@ -68,8 +70,9 @@
 			
 	  </plugins>
 	</build>
-
-	<dependencies>
+</profile>
+</profiles>
+		<dependencies>
         <dependency>
             <groupId>org.mule.connectors</groupId>
             <artifactId>mule-http-connector</artifactId>
