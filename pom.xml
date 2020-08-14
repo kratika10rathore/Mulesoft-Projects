@@ -8,18 +8,8 @@
     <packaging>mule-application</packaging>
 
 	<name>training4-american-was</name>
-	<distributionManagement>
-    <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>corp1</id>
-      <name>Corporate Repository</name>
-      <url>https://anypoint.mulesoft.com</url>
-      <layout>default</layout>
-    </repository>
-    
-</distributionManagement>
-
-    <properties>
+	
+   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
